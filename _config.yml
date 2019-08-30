@@ -1,0 +1,115 @@
+# ---------------- #
+#   Main Configs   #
+# ---------------- #
+baseurl:
+url: https://xiangming25.github.io
+date_format: "ordinal"
+title: 此生依然
+subtitle: "工作总结、学习记录"
+description: "向明的个人博客"
+keywords: xiangming, csyr, xiangming25
+timezone: Asia/Shanghai
+encoding: "utf-8"
+side_bar_repo_limit: 5
+
+# ---------------- #
+#      Author      #
+# ---------------- #
+author: xiangming
+organization: 
+organization_url: 
+github_username: xiangming25
+location: chengdu, China
+email: xiangming25@163.com
+
+# ---------------- #
+#    Navigation    #
+# ---------------- #
+navs:
+  -
+    href: /
+    label: 首页
+
+  -
+    href: /categories/
+    label: 分类
+
+#   -
+#     href: /archives/
+#     label: 归档
+
+  -
+    href: /links/
+    label: 链接
+
+  -
+    href: /about/
+    label: 关于
+
+# ---------------- #
+#       RSS        #
+# ---------------- #
+subscribe_rss: /feed.xml
+
+# ---------------- #
+#      Jekyll      #
+# ---------------- #
+markdown: kramdown
+kramdown:
+    input: GFM
+highlighter: rouge
+paginate: 10
+lsi: false
+quiet: false
+excerpt_separator: "\n\n"
+permalink: /:year/:month/:day/:title/
+gems:
+    - jekyll-github-metadata
+    - rouge
+#     - jekyll-html-pipeline
+    - jekyll-paginate
+    - jekyll-sitemap
+    - jekyll-feed
+    - jemoji
+#     - jekyll-mentions
+collections:
+    wiki:
+        output: true
+        permalink: /wiki/:path/
+
+repository: xiangming25/xiangming25.github.io
+
+# ---------------- #
+#      Comments    #
+# ---------------- #
+# support provider: disqus, gitment, gitalk
+comments_provider: gitalk
+gitment:
+    owner: xiangming25
+    repo: blog-comments
+    oauth:
+        client_id: 4d0906e83ace5269a1c7
+        client_secret: 5a8642f6672e87c261c0999f1c587a618558465b
+# https://github.com/gitalk/gitalk#install
+gitalk:
+    owner: xiangming25
+    repo: blog-comments
+    clientID: 4d0906e83ace5269a1c7
+    clientSecret: 5a8642f6672e87c261c0999f1c587a618558465b
+# 在使用其它评论组件时可点击显示 Disqus
+lazy_load_disqus : false
+
+# ---------------- #
+#      Search      #
+# ---------------- #
+simple_jekyll_search:
+    # 是否支持全文搜索
+    fulltext: false
+    # 最多显示多少条搜索结果
+    limit: 10
+
+# ---------------- #
+#    Analytics     #
+# ---------------- #
+google:
+    # analytics_id: UA-80669434-1
