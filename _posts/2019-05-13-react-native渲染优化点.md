@@ -21,10 +21,10 @@ keywords: react-native, optimization
 
 ## 前提（掌握基础知识，明确优化目标）
 #### 1. PureComponent、Component + shouldComponentUpdate、stateless的使用场景？
-![几种不同的组件的使用场景](https://upload-images.jianshu.io/upload_images/9418595-c971d6fb98176525.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![几种不同的组件的使用场景](https://upload-images.jianshu.io/upload_images/9418595-c971d6fb98176525.png)
 
 #### 2. 数据的存储位置有哪些，哪些什么引起页面重新渲染？
-![数据的存储位置](https://upload-images.jianshu.io/upload_images/9418595-b1a3d03a36d99137.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![数据的存储位置](https://upload-images.jianshu.io/upload_images/9418595-b1a3d03a36d99137.png)
 
 #### 3. 如何看优化后性能带来多在的提高？
 - CPU的消耗
@@ -37,15 +37,15 @@ keywords: react-native, optimization
 #### 1. 滚动时的重复渲染
 首先，使用`FlatList`和`SectionList`代替`ListView`。
 有时会对滚动进行一个监听，当页面滚动到一定的位置时，页面的头部需要更改一个样式。未优化之前的代码如下：
-![页面滚动时，更新是否显示毛玻璃头部样式](https://upload-images.jianshu.io/upload_images/9418595-04649c817a3a8bdf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![页面滚动时，更新是否显示毛玻璃头部样式](https://upload-images.jianshu.io/upload_images/9418595-04649c817a3a8bdf.png)
 这样存在一个很大的性能消耗，`contentOffsetY <= 1`时就使用`setState`方法让`blurHeaderTransparent`改成true, 此时如果`blurHeaderTransparent`已经是`true`了，完全没有必要重重新更新它为`true`, 同样，在`else`里面, 不管`blurHeaderTransparent`是否是`false`, 均重新更新它为`false`。
 解决方法如下：
-![image.png](https://upload-images.jianshu.io/upload_images/9418595-709fb7d24e4a70b3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](https://upload-images.jianshu.io/upload_images/9418595-709fb7d24e4a70b3.png)
 多加了两个判断，在页面滚动时，会少许多的重复渲染。
 
 #### 2. 善用Component + shouldComponentUpdate
 紧接着上面的问题，一个滚动列表`FlatList`有很多的row需要渲染，由于业务需求，row里面的显示会根据传入的type的不同，显示不同的样式，咱们在做的时候，想把这个判断封装在row里面，`type === a` 显示 `style1`， `type === b` 显示`style2`，根据约定的前提，这种情况这个组件就只能使用`PureComponent`或者`Compnent + shouldComponentUpdate`，看了一下传入的props，发现传入的数据较多，内容层级较深，有一个使用的地方是这样的`const readDate = this.props.rowData.item.readDate`，如果此时使用`PureComponent`，很可能会出现因为数据改变了，但是页面不刷新的问题，所以这种情况使用`Component + shouldComponentUpdate`是更好的方式，观察这个组件中有什么是需要重新渲染的， 发现只有小红点在点击后需要重新渲染，所以优化的代码如下所示：
-![image.png](https://upload-images.jianshu.io/upload_images/9418595-834f74ca23ee8498.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](https://upload-images.jianshu.io/upload_images/9418595-834f74ca23ee8498.png)
 
 #### 3. 不用重新渲染的数据放在了state下面
 页面在上拉加载更多时，有分页请求数据，每次请求的数据`page`参数都需要`+1`, 这一类的数据不会在页面中渲染的，所以它也就不用放在state下面，如果在在这个页面或者这个组件中的多处会共用这个数据，可以将它直接挂载到该组件的`this`下面。
@@ -116,7 +116,7 @@ render() {
 ## 总结
 话不多说，导图参上
 
-![渲染优化点2.jpg](https://upload-images.jianshu.io/upload_images/9418595-8533b85578ca52ff.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![渲染优化点2.jpg](https://upload-images.jianshu.io/upload_images/9418595-8533b85578ca52ff.jpg)
 
 ## 参考资料
 1. [React Native 性能优化总结](https://github.com/amandakelake/blog/issues/49)
