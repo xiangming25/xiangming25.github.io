@@ -116,7 +116,7 @@ render() {
 ## 总结
 话不多说，导图参上
 
-![渲染优化点2.jpg](https://upload-images.jianshu.io/upload_images/9418595-8533b85578ca52ff.jpg)
+![渲染优化点2.jpg](/assets/images/2019/05/9418595-8533b85578ca52ff.jpg)
 
 ## 参考资料
 1. [React Native 性能优化总结](https://github.com/amandakelake/blog/issues/49)
