@@ -18,7 +18,7 @@ keywords: javascript, nodejs, ubuntu
   ```
   sudo apt-get remove --purge node-express
   ```
-![移除express](/images/ubuntu_express_1.png)
+![移除express](/assets/images/2016/12/ubuntu_express_1.png)
 ### 3. 安装express
   ```
   > npm install -g express-generator
@@ -38,4 +38,4 @@ keywords: javascript, nodejs, ubuntu
 
 能看见有文件目录生成就说明已经安装成功了。
 
-![](/images/ubuntu_express_2.png)
+![](/assets/images/2016/12/ubuntu_express_2.png)
