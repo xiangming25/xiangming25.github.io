@@ -3,11 +3,11 @@
     color: #fff
 }
 .site-header {
-  background: #4183c4 url('/assets/images/banner.jpg') no-repeat center top;
+  background: rgb(9, 31, 4) url('/assets/images/banner.jpg') no-repeat center top;
   background-size: 100% 263px;
 }
 .banner {
-  background: #4183c4 url('/assets/images/banner.jpg') no-repeat center -68px;
+  background: rgb(9, 31, 4) url('/assets/images/banner.jpg') no-repeat center -68px;
   background-size: 100% 263px;
 }
 .home .banner .collection-head {
