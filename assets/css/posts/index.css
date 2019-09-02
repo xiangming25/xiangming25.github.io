@@ -123,3 +123,15 @@
     background-color: #777;
     border-radius: 10px;
 }
+.page-error {
+    width: 100%;
+    max-width: 720px;
+    min-height: 500px;
+    text-align: center;
+    line-height: 500px;
+    margin: 0 auto;
+}
+.page-error .img-error {
+    display: inline-block;
+    width: 100%;
+}
