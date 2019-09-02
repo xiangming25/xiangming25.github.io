@@ -260,5 +260,5 @@ export default function applyMiddleware(...middlewares) {
 
 
 ## 参考链接
-- https://www.redux.org.cn/
-- https://juejin.im/post/5b9617835188255c781c9e2f
+- [https://www.redux.org.cn/](https://www.redux.org.cn/)
+- [https://juejin.im/post/5b9617835188255c781c9e2f](https://juejin.im/post/5b9617835188255c781c9e2f)
