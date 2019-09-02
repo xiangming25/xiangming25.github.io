@@ -84,12 +84,6 @@ repository: xiangming25/xiangming25.github.io
 # ---------------- #
 # support provider: disqus, gitment, gitalk
 comments_provider: gitalk
-gitment:
-    owner: xiangming25
-    repo: blog-comments
-    oauth:
-        client_id: c1095fc8afa022843ec7
-        client_secret: 29d7f404f4b8694dd17cfb7bde264031267c2c2b
 # https://github.com/gitalk/gitalk#install
 gitalk:
     owner: xiangming25
