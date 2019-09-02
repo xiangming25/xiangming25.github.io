@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: content
 title: About
 description: 打码改变世界
 keywords: xiangming, 向明
