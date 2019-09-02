@@ -245,6 +245,7 @@ console.log(foo.getX.apply(obj));   //81
 
 - 隐式绑定规则会把函数调用中的this绑定到这个上下文对象
 - 对象属性引用链中只有上一层或者说是最后一层在调用位置中起作用
+
 ```
 function foo() {
     console.log(this.a);
@@ -259,7 +260,9 @@ var obj1 = {
 };
 obj1.obj2.foo();            => 42
 ```
+
 - 隐式丢失
+
 ```
 function foo() {
     console.log(this.a);
@@ -273,6 +276,7 @@ var a = 'out data';
 
  bar();         => out data
 ```
+
 这里的bar它引用的是foo函数本身，因此此时的bar（）其实是一个不带任何修饰的函数调用，因此应用了默认绑定。
 
 4 new绑定
@@ -310,6 +314,7 @@ new 和 call / apply 无法同时使用，因此无法通过new foo.call(obj1) �
 ES6的箭头函数，它实际上是根据外层的作用域来决定this的
 
 在es6之前，有一种方式与它是一样的
+
 ```
 function foo() {
     var self = this;
