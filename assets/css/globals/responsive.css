@@ -105,11 +105,6 @@
   .collapsed .icon-bar + .icon-bar {
     margin-top: 4px;
   }
-
-  .mini-repo-list-item .owner.css-truncate-target,
-  .mini-repo-list-item .repo-and-owner.css-truncate-target {
-    max-width: 300px
-  }
   .markdown-body h1 {
     font-size: 2rem
   }
