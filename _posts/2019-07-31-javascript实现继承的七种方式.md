@@ -1,7 +1,7 @@
 ---
 layout: post
 title: javascript实现继承的七种方式
-categories: Javascript
+categories: javascript
 description: javascript实现继承的多种方式
 keywords: javascript extends, javascript 继承
 ---

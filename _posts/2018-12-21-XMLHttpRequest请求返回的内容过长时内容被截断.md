@@ -1,7 +1,7 @@
 ---
 layout: post
 title: XMLHttpRequest请求返回的内容过长时内容被截断
-categories: Javascript
+categories: javascript
 description: XMLHttpRequest请求返回的内容过长时内容被截断
 keywords: javascript, XMLHttpRequest 内容截断
 ---
