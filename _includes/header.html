@@ -70,6 +70,17 @@
         <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
     {% endcase %}
     <script src="https://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+
+    <!-- 百度统计代码 -->
+    <script>
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?ffa9e3c5e35cc7c9c84d84ed1004611e";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
 </head>
 <body class="{{ page.class }}" data-mz="{{ page.class }}">
     <header class="site-header">
