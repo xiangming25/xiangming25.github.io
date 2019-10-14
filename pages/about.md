@@ -1,14 +1,15 @@
 ---
 layout: content
 title: About
-description: 打码改变世界
+description: 个人简介
 keywords: xiangming, 向明
-comments: true
+comments: false
+share: false
 menu: 关于
 permalink: /about/
 ---
 
-坚信熟能生巧，努力改变人生。
+解释再多，不如看看结果
 
 ## 联系
 
