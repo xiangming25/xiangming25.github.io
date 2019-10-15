@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="{{ site.url }}/assets/css/components/collection.css">
     <link rel="stylesheet" href="{{ site.url }}/assets/css/sections/repo-list.css">
     <link rel="stylesheet" href="{{ site.url }}/assets/css/globals/common.css">
-    <link rel="stylesheet" href="{{ site.url }}/assets/vendor/share.js/dist/css/share.min.css">
+    <link rel="stylesheet" href="{{ site.url }}/assets/vendor/share/css/share.min.css">
     <link rel="stylesheet" href="{{ site.url }}/assets/css/globals/responsive.css">
     <link rel="stylesheet" href="{{ site.url }}/assets/css/posts/index.css">
     <!-- Latest compiled and minified CSS -->
@@ -73,17 +73,19 @@
 
     <!-- 百度统计代码 -->
     <script>
-      if (location.hostname !== 'xiangming.vip') return;
-      var _hmt = _hmt || [];
-      (function() {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?ffa9e3c5e35cc7c9c84d84ed1004611e";
-        var s = document.getElementsByTagName("script")[0]; 
-        s.parentNode.insertBefore(hm, s);
-      })();
+      if (location.hostname === 'xiangming.vip') {
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?ffa9e3c5e35cc7c9c84d84ed1004611e";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+      }
     </script>
 </head>
 <body class="{{ page.class }}" data-mz="{{ page.class }}">
+    <img src="{{ site.url }}/assets/images/logo.jpg" width="0" height="0" />
     <header class="site-header">
         <div class="container">
             <a href="{{ site.url }}/" title="{{ site.title }}" class="logo">
