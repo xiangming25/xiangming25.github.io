@@ -19,6 +19,11 @@ layout: default
             <a href="{{ site.url }}/categories/#{{ cat }}" title="{{ cat }}">{{ cat }}</a>
           </span>
           {% endfor %}
+          {% if page.updateDate %}
+          <span class="meta-info">
+            <span class="octicon octicon-sync"></span> {{ page.updateDate | date: "%Y/%m/%d" }}
+          </span>
+          {% endif %}
         </div>
       </div>
     </div>
