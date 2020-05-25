@@ -3,6 +3,7 @@ layout: post
 title: react-native中的平台差异
 categories: react-native
 description: react-native中的平台差异
+updateDate: 2020-05-25
 keywords: react-native, platform different
 ---
 
@@ -40,6 +41,16 @@ keywords: react-native, platform different
 ```
 1. 弹框上面有关闭按钮
 2. 弹出框使用Modal组件，给组件添加`onRequestClose={this.close}`事件监听，监听到点击了物理返回键，做对应的处理
+```
+
+## 5. Text 不设置 lineHeight
+
+- IOS ---- 正常显示
+- Android ---- 内容过长时部分部分可能会被截断
+
+解决办法：
+```
+1. 设置 lineHeight, lineHeight 大于 字体的高度
 ```
 
 内容持续更新中~~~~~~
