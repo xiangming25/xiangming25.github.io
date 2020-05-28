@@ -14,3 +14,7 @@ keywords: TypeScript学习资料、TypeScript study meterials
 
 ## redux with TypeScript
 > [https://redux.js.org/recipes/usage-with-typescript](https://redux.js.org/recipes/usage-with-typescript)
+
+## react-redux-typescript-guide
+
+> [https://github.com/piotrwitek/react-redux-typescript-guide](https://github.com/piotrwitek/react-redux-typescript-guide)
