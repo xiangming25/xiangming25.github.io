@@ -150,19 +150,25 @@
     font-weight: 500;
 }
 .hand {
+    position: relative;
     height: 30px;
     overflow: hidden;
     text-align: center;
 }
 .hand-animate {
-    animation: up-down 0.5s infinite;
+    animation: tips 1s linear infinite;
 }
 
-@keyframes up-down {
+@keyframes tips {
     0% {
-        transform: translate3d(0, 0);
+        margin-top: 0;
     }
+
+    50% {
+        margin-top: 10px;
+    }
+
     100% {
-        transform: translate3d(0, 20px);
+        margin-top: 0;
     }
 }

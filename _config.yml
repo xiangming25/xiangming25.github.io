@@ -82,20 +82,6 @@ collections:
 repository: xiangming25/xiangming25.github.io
 
 # ---------------- #
-#      Comments    #
-# ---------------- #
-# support provider: disqus, gitment, gitalk
-comments_provider: gitalk
-# https://github.com/gitalk/gitalk#install
-gitalk:
-    owner: xiangming25
-    repo: blog-comments
-    clientID: c1095fc8afa022843ec7
-    clientSecret: 29d7f404f4b8694dd17cfb7bde264031267c2c2b
-# 在使用其它评论组件时可点击显示 Disqus
-lazy_load_disqus : false
-
-# ---------------- #
 #      Search      #
 # ---------------- #
 simple_jekyll_search:
