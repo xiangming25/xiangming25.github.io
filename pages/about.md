@@ -5,7 +5,6 @@ subtitle: 心态影响状态，态度决定高度
 description: 个人简介
 keywords: xiangming, 向明
 comments: false
-share: false
 menu: 关于
 permalink: /about/
 ---
