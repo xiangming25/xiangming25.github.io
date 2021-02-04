@@ -1,20 +1,34 @@
 .home .banner,
 .home .site-header {
-    color: #fff
+    color: #fff;
+    z-index: 99;
 }
-.site-header {
-  background: rgb(9, 31, 4) url('/assets/images/banner.jpg') no-repeat center top;
-  background-size: 100% 263px;
+.home-container {
+  position: relative;
+  z-index: 2;
 }
 .banner {
-  background: rgb(9, 31, 4) url('/assets/images/banner.jpg') no-repeat center -68px;
-  background-size: 100% 263px;
+  background: rgba(0, 0, 0, 0.6) url('/assets/images/banner.jpg') no-repeat center center;
+  background-size: 100% 100%;
 }
 .home .banner .collection-head {
+  position: relative;
     color: #fff;
     background: 0 0;
     box-shadow: none;
-    -webkit-box-shadow: none
+    -webkit-box-shadow: none;
+    margin-top: -73px;
+    padding-top: 73px;
+}
+.home .banner .collection-head::after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  content: '';
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
 }
 
 .home .site-header {
@@ -26,7 +40,7 @@
 }
 
 .home .site-header .site-header-nav-item {
-    color: rgba(255, 255, 255, .5)
+    color: #ffffff;
 }
 
 .home .site-header .site-header-nav-item:hover {
