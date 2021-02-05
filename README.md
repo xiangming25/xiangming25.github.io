@@ -16,3 +16,7 @@
 ## 本地与览启动命令
 
 > bundle exec jekyll serve
+
+## 注意
+
+图片存放于 `gitee`上，国内访问速度更快

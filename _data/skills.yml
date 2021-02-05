@@ -2,16 +2,18 @@
   keywords:
       - React + Redux / mobx
       - React Native
-      - Vue
+      - Vue全家桶（Vue-cli, Vue, Vuex, Vue-router, axios, elementUI, ）
       - Angular
+      - ECMAScript6
+      - TypeScript
       - HTML5
       - CSS3
       - jQuery
       - requireJS
       - BootStrap
-      - ECMAScript6
       - SVG
       - 响应式布局
+      - SEO
 
 - name: 后台
   keywords:
