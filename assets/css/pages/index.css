@@ -8,7 +8,7 @@
   z-index: 2;
 }
 .banner {
-  background: rgba(0, 0, 0, 0.6) url('/assets/images/banner.jpg') no-repeat center center;
+  background: rgba(0, 0, 0, 0.6) url('https://gitee.com/xiangming25/assets/raw/master/images/banner.jpg') no-repeat center center;
   background-size: 100% 100%;
 }
 .home .banner .collection-head {

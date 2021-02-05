@@ -13,7 +13,7 @@ keywords: react-native, china-map
 
 效果图如下：
 ### IOS端
-![WX20190515-142405@2x.png](/assets/images/2019/05/9418595-68a7282fdfece511.jpg)
+![WX20190515-142405@2x.png](https://gitee.com/xiangming25/assets/raw/master/images/2019/05/9418595-68a7282fdfece511.jpg)
 
 ### Android端
-![WX20190515-142932@2x.png](/assets/images/2019/05/9418595-a6b4bf33372c55f7.jpg)
+![WX20190515-142932@2x.png](https://gitee.com/xiangming25/assets/raw/master/images/2019/05/9418595-a6b4bf33372c55f7.jpg)

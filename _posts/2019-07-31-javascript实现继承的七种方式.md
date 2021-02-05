@@ -51,7 +51,7 @@ console.log(cat.sleep());
 console.log(cat instanceof Animal);
 console.log(cat instanceof Cat);
 ```
-![image.png](/assets/images/2019/07/9418595-0ca2dd38e800de38.jpg)
+![image.png](https://gitee.com/xiangming25/assets/raw/master/images/2019/07/9418595-0ca2dd38e800de38.jpg)
 
 由上面的示例结果可以看出，使用构造函数来继承，它只继承了父类中绑定在this下面的属性，原型链上的属性是没有被继承的
 
@@ -89,9 +89,9 @@ cat1.body.push('foot');
 console.log(cat1, cat2);
 ```
 
-![image.png](/assets/images/2019/07/9418595-e72451c13695d37e.jpg)
+![image.png](https://gitee.com/xiangming25/assets/raw/master/images/2019/07/9418595-e72451c13695d37e.jpg)
 
-![image.png](/assets/images/2019/07/9418595-766be81acd48d59a.jpg)
+![image.png](https://gitee.com/xiangming25/assets/raw/master/images/2019/07/9418595-766be81acd48d59a.jpg)
 
 由上面的结果可以看出，实例化了两个对象，更改其中一个对象的值，另外一个对象的值也受到了影响
 

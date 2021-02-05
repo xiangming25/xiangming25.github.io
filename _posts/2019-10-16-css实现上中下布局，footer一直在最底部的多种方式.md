@@ -12,11 +12,11 @@ keywords: css, 上中下布局, footer一直在最底部
 
 内容较少时
 
-![内容较少时](/assets/images/2019/10/content-less.png)
+![内容较少时](https://gitee.com/xiangming25/assets/raw/master/images/2019/10/content-less.png)
 
 内容较多时
 
-![内容较少时](/assets/images/2019/10/content-more.png)
+![内容较少时](https://gitee.com/xiangming25/assets/raw/master/images/2019/10/content-more.png)
 
 
 ## 基础代码

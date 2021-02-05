@@ -15,7 +15,7 @@ app性能分析方法
 
 3. 在下面就可以看它对应的CPU 以及MEMORY
 
-![安卓性能分析](/assets/images/2018/11/android-analysis.png)
+![安卓性能分析](https://gitee.com/xiangming25/assets/raw/master/images/2018/11/android-analysis.png)
 
 
 2. ios性能分析
