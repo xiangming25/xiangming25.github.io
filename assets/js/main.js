@@ -1,4 +1,6 @@
 function toggleMenu() {
+  const width = $(document).width();
+  if (width > 768) return
   var nav = $(".site-header-nav").eq(0);
   if (nav.hasClass('site-header-nav-show')) {
     nav.removeClass('site-header-nav-show')
@@ -6,6 +8,10 @@ function toggleMenu() {
     nav.addClass('site-header-nav-show')
   }
 }
+
+$('#headerNavContainer').on('click', function (e) {
+  e.stopPropagation()
+})
 
 function closeMenu() {
   var nav = $(".site-header-nav").eq(0);

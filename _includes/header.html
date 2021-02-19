@@ -53,12 +53,12 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <nav class="site-header-nav" role="navigation">
-                <div class="site-header-nav-container">
+            <nav class="site-header-nav" role="navigation" onclick="toggleMenu();">
+                <div class="site-header-nav-container" id="headerNavContainer">
                   <i class="octicon octicon-x" id="headerOcticonX" onclick="closeMenu()"></i>
-                {% for nav in site.navs %}
-                <a href="{{ site.url }}{{ nav.href }}" class="{% if page.menu == nav.label %} selected {% endif %} site-header-nav-item" target="{{ nav.target | default: _self }}" title="{{ nav.label }}">{{ nav.label }}</a>
-                {% endfor %}
+                  {% for nav in site.navs %}
+                  <a href="{{ site.url }}{{ nav.href }}" class="{% if page.menu == nav.label %} selected {% endif %} site-header-nav-item" target="{{ nav.target | default: _self }}" title="{{ nav.label }}">{{ nav.label }}</a>
+                  {% endfor %}
                 </div>
             </nav>
         </div>
