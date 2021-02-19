@@ -11,6 +11,12 @@
   background: rgba(0, 0, 0, 0.6) url('https://gitee.com/xiangming25/assets/raw/master/images/banner.jpg') no-repeat center center;
   background-size: 100% 100%;
 }
+@media (max-width: 768px) {
+  .banner {
+    background: rgba(0, 0, 0, 0.6) url('https://gitee.com/xiangming25/assets/raw/master/images/1612494260300-banner_1000x491.jpg') no-repeat center center;
+    background-size: 100% 100%;
+  }
+}
 .home .banner .collection-head {
   position: relative;
     color: #fff;
@@ -52,9 +58,19 @@
   .home .collapsed .icon-bar {
     background-color: white;
   }
-
+  .home .collection-head {
+    height: 150px;
+  }
+  .collection-title {
+    width: 100vw;
+  }
   .home .collection-head .collection-header {
-    font-size: 1.25em;
+    font-size: 1.1em;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .collection-info {
+    display: none;
   }
 }
 
