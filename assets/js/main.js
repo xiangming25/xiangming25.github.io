@@ -1,10 +1,15 @@
 function toggleMenu() {
-  var nav = document.getElementsByClassName("site-header-nav")[0];
-  if (nav.style.display == "inline-flex") {
-    nav.style.display = "none";
+  var nav = $(".site-header-nav").eq(0);
+  if (nav.hasClass('site-header-nav-show')) {
+    nav.removeClass('site-header-nav-show')
   } else {
-    nav.style.display = "inline-flex";
+    nav.addClass('site-header-nav-show')
   }
+}
+
+function closeMenu() {
+  var nav = $(".site-header-nav").eq(0);
+  nav.removeClass('site-header-nav-show')
 }
 
 jQuery(function() {

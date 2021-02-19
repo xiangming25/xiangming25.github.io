@@ -1,0 +1,10 @@
+{
+  "CSS": "CSS",
+  "Typescript": "Typescript",
+  "other": "其他",
+  "javascript": "javascript",
+  "nodeJS": "nodeJS",
+  "npm": "npm",
+  "react-native": "react-native",
+  "vue": "vue"
+}
