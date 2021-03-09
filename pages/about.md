@@ -38,6 +38,6 @@ permalink: /about/
 <div style='display: flex;vertical-align: top;'>
   <figure style="margin: 0;">
     <img src="https://gitee.com/xiangming25/picture/raw/master/2021-2-3/1612338183273-qrcode-8cm.jpg" />
-    <figcaption style="text-align: center;">前端知识总结</figcaption>
+    <figcaption style="text-align: center;">前端学习总结</figcaption>
   </figure>
 </div>

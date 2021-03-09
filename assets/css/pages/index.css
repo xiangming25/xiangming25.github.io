@@ -73,20 +73,3 @@
     display: none;
   }
 }
-
-.home-qrcode {
-  position: relative;
-  cursor: pointer;
-}
-.home-qrcode img {
-  display: none;
-  transition: all 0.5s;
-}
-.home-qrcode:hover img {
-  position: absolute;
-  display: block;
-  left: 0;
-  top: 30px;
-  width: 180px;
-  z-index: 99;
-}
