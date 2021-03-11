@@ -218,7 +218,7 @@ Failed to mount component: template or render function not defined.
 #### 24. 使用过滤器时，当前的值永远是过滤器的第一个参数。过滤器也可以接收额外的参数，分别作为第二个参数和第三个参数
 
 ```
-{{ message | filterA('arg1', arg2) }}
+\{\{ message | filterA('arg1', arg2) \}\}
 ```
 
 其中 message 是 filterA 的第一个参数，arg1, 和 arg2 分别是第二个参数和第三个参数

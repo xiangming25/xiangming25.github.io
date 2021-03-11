@@ -131,7 +131,7 @@ APP 中经常会用到大量的图标，使用[字体图标]([https://icomoon.io
 - 图片可以通过压缩一定比例后上传至 [CDN](https://baike.baidu.com/item/CDN/420951?fr=aladdin)，在需要的时候再去请求对应的图片链接来加载
 
 ```
-<Image source={{ uri: 'https://cdn.image.jpg' }} />
+<Image source=\{\{ uri: 'https://cdn.image.jpg' \}\} />
 ```
 
 ## 使用Redux管理状态

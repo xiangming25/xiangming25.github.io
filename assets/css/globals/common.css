@@ -10,6 +10,14 @@
     width: 20px;
     height: 20px;
   }
+  .pc-only {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .mob-only {
+    display: none;
+  }
 }
 .qrcode-img {
   width: 180px;

@@ -1,10 +1,12 @@
 
 <h3>搜索</h3>
-<div id="site_search">
-    <input type="text" id="search_box" placeholder="请输入要搜索的标题" style="width: 100%;">
-</div>
+<section class="search-container">
+    <div id="site_search">
+        <input type="text" id="search_box" placeholder="请输入要搜索的标题" style="width: 100%;">
+    </div>
 
-<ul id="search_results"></ul>
+    <ul id="search_results" class="search-result"></ul>
+</section>
 
 <link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/css/modules/sidebar-search.css">
 <script src="{{ site.url }}/assets/js/simple-jekyll-search.min.js"></script>
