@@ -117,7 +117,7 @@ IE盒模型是：`box-sizing: border-box`。它表示，设定的长宽包含`bo
 
 定义一个块级范围。里面的内容和其他块级的内容互不影响。
 
-属于同一个`BTC`的两个`Box` 的 `margin` 会相互重叠。
+属于同一个`BFC`的两个`Box` 的 `margin` 会相互重叠。
 
 [什么是BFC?](https://juejin.cn/post/6844903544726749198)
 
@@ -144,7 +144,7 @@ IE盒模型是：`box-sizing: border-box`。它表示，设定的长宽包含`bo
 每个函数在调用时，都会创建一个执行环境。这个执行环境有它的变量对象以及作用域链。通过作用域链，可以访问上层的作用域的内容。
 
 #### 优点
-- 它有一个很棒的特性注是延迟执行。这也导致了闭包只能取包含函数的最后一个值。
+- 它有一个很棒的特性就是延迟执行。这也导致了闭包只能取包含函数的最后一个值。
 
 ```
 function foo (a) {
@@ -185,7 +185,7 @@ foo3();  // 输出3
 
 foo函数调用结束后， foo函数的变量对象并不会被立即销毁，而是只有当取得foo函数闭包的值的foo1, foo2, foo3调用结束， 这三个函数的变量对象和作用域链被销毁后， foo函数才算“完成任务”，这时，它才能被销毁。
 
-[cnblogs.com/penghuwan/p/7404372.html](cnblogs.com/penghuwan/p/7404372.html)
+[https://www.cnblogs.com/penghuwan/p/7404372.html](https://www.cnblogs.com/penghuwan/p/7404372.html)
 
 ### 实现一个单例闭包
 
