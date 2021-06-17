@@ -1,7 +1,7 @@
 ---
 layout: post
 title: typescript catch 值类型报错解决方案
-categories: [typescript]
+categories: [TypeScript]
 description: typescript catch 值类型报错解决方案
 keywords: typescrpit catch value type error, 如何修改catch值类型, catch 值类型在 window和mac上显示不一致
 ---
