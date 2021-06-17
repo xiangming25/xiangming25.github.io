@@ -18,7 +18,7 @@ keywords: typescript set antd table props, 如何设置二次封装antd table的
 
 使用示例如下：
 
-```tsx
+```html
 <PageList
     searchProps={searchProps}
     search={search}
