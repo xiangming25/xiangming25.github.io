@@ -18,18 +18,21 @@ keywords: typescript set antd table props, 如何设置二次封装antd table的
 
 使用示例如下：
 
-```html
+```tsx
+
+const tableProps = {
+  columns,
+  dataSource,
+  pagination: {
+    total,
+  },
+  rowKey: 'id'
+}
+
 <PageList
     searchProps={searchProps}
     search={search}
-    tableProps={{
-        columns,
-        dataSource,
-        pagination: {
-            total,
-        },
-        rowKey: 'id'
-    }}
+    tableProps={tableProps}
 />
 ```
 
