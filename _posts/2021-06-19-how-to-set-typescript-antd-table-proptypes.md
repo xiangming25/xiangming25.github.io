@@ -123,9 +123,9 @@ export default function PageList<T>(props: IProps<T>) {
 
 以下是我自己用两种不同的 `tableProps` 类型定义方式在鼠标移动上去后的提示状态对比。
 
-![tableProps: TableProps<T>](https://gitee.com/xiangming25/picture/raw/master/2021-6-17/1623938924291-page-list-table-column0.png)
+![](https://gitee.com/xiangming25/picture/raw/master/2021-6-17/1623938924291-page-list-table-column0.png)
 
-![tableProps: Pick<TableProps<T>, keyof TableProps<T>>](https://gitee.com/xiangming25/picture/raw/master/2021-6-17/1623938924287-page-list-table-column.png)
+![](https://gitee.com/xiangming25/picture/raw/master/2021-6-17/1623938924287-page-list-table-column.png)
 
 很明显，使用第二种方式和 `antd` 自带的 `Table` `columns` 类型验证更加相似。所以，这里推荐使用第二种方式。
 
