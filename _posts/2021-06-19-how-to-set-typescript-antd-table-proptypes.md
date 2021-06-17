@@ -6,8 +6,6 @@ description: typescript如何设置二次封装的antd table的props类型
 keywords: typescript set antd table props, 如何设置二次封装antd table的props, 设置antd table的props类型
 ---
 
-## 前言
-
 后台管理系统中，每个模块的列表页，功能模块划分得都比较统一。头部是许多的查询输入框，下面是根据搜索值，展示的 `Table` 表格。
 
 示例图如下所示：
