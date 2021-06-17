@@ -10,7 +10,7 @@ permalink: /about/
 
 ## 个人简介
 
-从事前端工作 `五年`，从最初的`HTML`、`CSS`、`javascript`、`jQuery`，现到后面的 `angular1.5`，再到后面的 `React`、`react-native`、`Redux`、`mobx`，再到现在 `Vue`、`vuex`。见证了前端从最初的单一`jQuery`库走天下至`angular`、`react`, `vue`的三足鼎立。让我感受到了前端发展的迅速，同时更让我感受到了前端的魅力以及前端拥有无比广阔的发展空间的惊讶。
+从事前端工作已经有很长一段时间了，从最初的`HTML`、`CSS`、`javascript`、`jQuery`，再到后面的 `angular1.5`，再到后面的 `React`、`react-native`、`Redux`、`mobx`，再到现在 `Vue`、`vuex`。见证了前端从最初的单一`jQuery`库走天下至`angular`、`react`, `vue`的三足鼎立。让我感受到了前端发展的迅速，同时更让我感受到了前端的魅力以及前端拥有无比广阔的发展空间的惊讶。
 
 ## 兴趣爱好
 
