@@ -1,8 +1,9 @@
 - name: 前端
   keywords:
-      - React + Redux / mobx
+      - React + Redux / mobx / dva + ant-design
+      - UMI
       - React Native
-      - Vue全家桶（Vue-cli, Vue, Vuex, Vue-router, axios, elementUI, ）
+      - Vue全家桶（Vue-cli, Vue, Vuex, Vue-router, axios, elementUI ）
       - Angular
       - ECMAScript6
       - TypeScript
@@ -17,7 +18,7 @@
 
 - name: 后台
   keywords:
-      - Node.js
+      - Node.js（express / koa / eggJs）
       - java
 
 - name: 打包工具
