@@ -32,7 +32,9 @@ keywords: 使用antd时遇见的问题及解决方案, 使用antd时遇见的坑
 
 只在部分 `column` 上设置 `fixed: right` 或者 `align: center` 这些会导致类型验证错误
 
-> `Type '({ title: string; dataIndex: string; fixed: string; render?: undefined; } | { title: string; dataIndex: string; fixed?: undefined; render?: undefined; } | { title: string; render: (text: string, record: IScoreRulesItem) => Element; dataIndex?: undefined; fixed?: undefined; })[]' is not assignable to type '(ColumnGroupType<IScoreRulesItem> | ColumnType<IScoreRulesItem>)[]'`
+```
+Type '({ title: string; dataIndex: string; fixed: string; render?: undefined; } | { title: string; dataIndex: string; fixed?: undefined; render?: undefined; } | { title: string; render: (text: string, record: IScoreRulesItem) => Element; dataIndex?: undefined; fixed?: undefined; })[]' is not assignable to type '(ColumnGroupType<IScoreRulesItem> | ColumnType<IScoreRulesItem>)[]'
+```
 
 提示了很长一段一段的错误，大致的原因是：设置了 `fixed: 'right'`。`TS` 类型推论把 `fixed` 的类型理解为 `string`。而在 `antd` 源码中，通过一步一步向上找，最后在 `node_modules/rc-table/lib/interface.d.ts` 找到 `fixed` 定义的类型是 `export declare type FixedType = 'left' | 'right' | boolean;`。它表明，`fixed` 的类型只能是 `left`、`right`、`boolean` 三类中的一种。
 
