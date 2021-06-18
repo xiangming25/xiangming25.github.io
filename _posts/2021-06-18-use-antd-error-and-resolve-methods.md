@@ -3,7 +3,7 @@ layout: post
 title: 使用antd时遇见的问题及解决方案
 categories: [antd]
 description: 使用antd时遇见的问题及解决方案
-keywords: 使用antd时遇见的问题及解决方案, 使用antd时遇见的坑,antd爬坑记,antd columns类型错误, antd table有的列看不见
+keywords: 使用antd时遇见的问题及解决方案, 使用antd时遇见的坑,antd爬坑记, 滚动失效及横向无法铺满,antd columns类型错误, antd table有的列看不见
 ---
 
 整理目前使用 `antd` 时遇见的一些问题及解决方案。
@@ -22,13 +22,15 @@ keywords: 使用antd时遇见的问题及解决方案, 使用antd时遇见的坑
 
 ## Table
 
-### 在 `Space`下使用 `Table` 会导致横向滚动失败问题，并且会导致 `Table` 横向无法铺满的问题
+### 1. 滚动失效及横向无法铺满
+
+在 `Space`下使用 `Table` 会导致横向滚动失败问题，并且会导致 `Table` 横向无法铺满的问题
 
 这种情况本不应该出现，出现的问题个人觉得是滥用 `Space` 组件
 
-<!--[https://git.bg.huohua.cn/we-la/huohua-scm-web/commit/edcee183806d4b3e12975bd7590aa7cc44e3b62b](https://git.bg.huohua.cn/we-la/huohua-scm-web/commit/edcee183806d4b3e12975bd7590aa7cc44e3b62b)-->
+### 2. `column` 类型错误
 
-### 只在部分 `column` 上设置 `fixed: right` 会导致类型验证错误
+只在部分 `column` 上设置 `fixed: right` 或者 `align: center` 这些会导致类型验证错误
 
 > `Type '({ title: string; dataIndex: string; fixed: string; render?: undefined; } | { title: string; dataIndex: string; fixed?: undefined; render?: undefined; } | { title: string; render: (text: string, record: IScoreRulesItem) => Element; dataIndex?: undefined; fixed?: undefined; })[]' is not assignable to type '(ColumnGroupType<IScoreRulesItem> | ColumnType<IScoreRulesItem>)[]'`
 
@@ -51,7 +53,7 @@ columns: [
 [参考链接：https://github.com/ant-design/ant-design/issues/7965](https://github.com/ant-design/ant-design/issues/7965)
 
 
-### 其它的列都设置了宽度，有一个没有设置，当缩小屏幕时，那一列可能会看不到
+### 3. 当缩小屏幕时，有一列会看不到
 
 为了让页面在不同屏幕大小看到的页面展示效果尽可能的一致，不会因为屏幕宽度的不同，导致 `table` 中不必要的换行。会给一些 `column` 设置固定的宽度。如果每一个 `column` 都设置了固定的宽度，屏幕宽度又是不固定的，所以一般会有一个或者多个 `column` 不设置宽度，让没有设置宽度的 `column` 自适应剩下的宽度。
 
@@ -61,16 +63,18 @@ columns: [
 
 屏幕设置最小宽度 `1000px`。其它的 `column` 设置的宽度总和不要超过`1000px`，这样在缩放屏幕宽度时，就不会出现上面的问题了。
 
-### 先查询，勾选复选框，再重置。再查询相同的查询条件，再次查询出来的，默认是前面勾选的，但是点击提交时，并没有把勾选的值带上
+### 4. 默认勾选问题
+
+先查询，勾选复选框，再重置。再查询相同的查询条件，再次查询出来的，默认是前面勾选的，但是点击提交时，并没有把勾选的值带上
 
 问题出现的原因：需要手动控制 `selectedRowKeys` 选中值。
-
-问题代码：[https://git.bg.huohua.cn/we-la/huohua-scm-web/commit/550ce7a229884f60d28df7454c9c1e927679255c](https://git.bg.huohua.cn/we-la/huohua-scm-web/commit/550ce7a229884f60d28df7454c9c1e927679255c)
 
 解决方法：[https://zhuanlan.zhihu.com/p/54500724](https://zhuanlan.zhihu.com/p/54500724)
 
 
-### Table 上使用 ellipsis, Tooltip，如果文本内容不长，导致 Tips 的箭头未居中
+### 5. 优雅使用 `ellipsis`
+
+Table 上使用 ellipsis, Tooltip，如果文本内容不长，导致 Tips 的箭头未居中
 
 直接使用 `ellipsis`，超出部分是会省略，并且鼠标移动上去后也会显示全所有的内容（`title` 方式）。但它有一个不好的体验。显示的全部内容无法选中并复制。所以需要使用 `Tooltip` 组件再进行一次包裹。用法如下：
 
