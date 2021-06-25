@@ -98,7 +98,7 @@ interface IPorps<T> {
   search: (params: any) => void;
 }
 
-export default function PageList<T>(props: IProps<T>) {
+export default function PageList<T extends object = any>(props: IProps<T>) {
     const { tableProps } = props;
     // do something
     
