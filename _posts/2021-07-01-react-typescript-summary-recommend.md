@@ -1,7 +1,7 @@
 ---
 layout: post
 title: React+TypeScript 实战总结及建议
-categories: [antd]
+categories: [TypeScript]
 description: typescript 常用类型简介以及React + TypeScript的一些建议
 keywords: React+TypeScript实战总结及建议, typescript 常见类型简介, interface与type应该怎么选,如何在react项目中很好地使用typescript
 ---
