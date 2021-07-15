@@ -394,10 +394,10 @@ type IDemo = {
 }
 
 // type IKey: 'A' | 'B' | 'C'
-type IKey: keyof IDemo = 'A' // right
-type IKey: keyof IDemo = 'B' // right
-type IKey: keyof IDemo = 'C' // right
-type IKey: keyof IDemo = 'D' // error
+const IKey: keyof IDemo = 'A' // right
+const IKey: keyof IDemo = 'B' // right
+const IKey: keyof IDemo = 'C' // right
+const IKey: keyof IDemo = 'D' // error
 ```
 
 ### 配合着泛型一起使用
