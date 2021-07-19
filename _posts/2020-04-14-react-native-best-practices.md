@@ -3,7 +3,7 @@ layout: post
 title: react-native最佳实践
 categories: react-native
 description: react-native最佳实践
-keywords: react-native, best practise, react-native 最佳实践
+keywords: react-native best practices, react-native 最佳实践
 ---
 
 ## 简化文件引用路径

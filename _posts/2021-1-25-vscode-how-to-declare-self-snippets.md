@@ -3,7 +3,7 @@ layout: post
 title: 如何在VScode中自定义代码模板
 categories: VCcode
 description: VScode自定义模板
-keywords: VScode自定义模板, 自定义模板, 代码模板
+keywords: vscode自定义模板, vscode snippets, vscode 代码片段
 ---
 
 ## 前言
