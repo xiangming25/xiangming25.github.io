@@ -33,7 +33,7 @@ keywords: vscode快捷键,自定义快捷键, vscode, close others, vscode 快�
 
 `ctrl + K + S`
 
-搜索需要这只快捷键的功能，比如 `close other`
+搜索需要设置快捷键的功能，比如 `close other`
 
 双击 `keybinding`
 
