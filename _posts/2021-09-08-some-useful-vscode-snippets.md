@@ -4,9 +4,8 @@ title: VSCode常见代码片段插件
 categories: [VScode]
 description: VSCode常见代码片段插件
 keywords: js 方法自动补全, vscode 代码片段, consloe.log美化
+updateDate: 2021-09-10
 ---
-
-## 前言
 
 写了很多重复的代码，一直在思考，能不能`少写一点`、`再少写一点`？我们现在用到的方法、提示信息等，真的没有再简化的空间了吗？
 
@@ -21,13 +20,17 @@ keywords: js 方法自动补全, vscode 代码片段, consloe.log美化
 
 想了解如何自定义代码片段的朋友，可以参考 [如何在VScode中自定义代码模板](https://mp.weixin.qq.com/s/LdMW0tR1y_u_-cSgYmxUjg) 这篇文章。
 
+目前刚写了两类的代码片段，一类是 `javascript` 中常见的代码，另外一个是 `react` 函数组件，后面会持续更新~~~。
+
 下面，我来介绍一下这个代码片段插件目前具备的一些功能。
 
-## 正文
-
-目前刚写了两类的代码片段，一类是 `javascript` 中常见的代码，另外一个是 `react` 函数组件，后面会持续更新~~~
+## Javascript
 
 ### log
+
+shortcut | description
+--- | ---
+`log` | `console.log('log:$1-------------: ', $1);`
 
 现在许多人在调试代码时，喜欢使用 `log` 的方式来调试。直接使用 `console.log(value)` 打印的值，有时候在 `浏览器` 的 `控制台` 中就算加上了过滤也不容易查找到。比如：
 
@@ -48,47 +51,74 @@ console.log('log:value-------------: ', value);
 
 ![使用 xm-snippets log](https://gitee.com/xiangming25/picture/raw/master/2021-9-8/1631099550739-image.png)
 
-### javascript
+### Array
 
-下面这些都是常见的 `javascript` 方法。
-
-我们在对数组进行操作时，比如 `arr.map` 往往会提示我们数组的 `map` 方法有哪些参数，每个参数对应的类型是什么。但是，这种提示还不够，我要的，是把后面的常见参数及回调等直接给我生成出来。能少敲一个字母，我就绝不多按一下。
-
-![默认方法](https://gitee.com/xiangming25/picture/raw/master/2021-9-8/1631112252660-image.png)
-
-
-快捷名 | 描述
+shortcut | description
 --- | ---
-`.map` | `.map((item, index) => {})`
-`.forEach` | `.forEach((item, index) => {})`
-`.filter` | `.filter((item, index) => {})`
-`.find` | `.find((item, index) => {})`
-`.findIndex` | `.findIndex((item, index) => {})`
-`.includes` | `.includes((item, index) => {})`
-`.every` | `.every((item, index) => {})`  
-`.some` | `.some((item, index) => {})`
-`.reduce` | `.reduce((accumulator, currentValue, index) => {}, initialValue)`
-`.reduceRight` | `.reduceRight((accumulator, currentValue, index) => {}, initialValue)`
-`switch` | `switch (key) { case value: break; default: break }`
-`for` | `for (let index = 0; index < array.length; index++) { const element = array[index] }`
+`map` | `array.map((item, index) => {})`
+`forEach` | `array.forEach((item, index) => {})`
+`filter` | `array.filter((item, index) => {})`
+`find` | `array.find((item, index) => {})`
+`findIndex` | `array.findIndex((item, index) => {})`
+`includes` | `array.includes((item, index) => {})`
+`every` | `array.every((item, index) => {})`
+`some` | `array.some((item, index) => {})`
+`reduce` | `array.reduce((accumulator, currentValue, index) => {}, initialValue)`
+`reduceRight` | `array.reduceRight((accumulator, currentValue, index) => {}, initialValue)`
 
-快捷名和我们平时使用的方法是一样的，我们在正常写代码时，一但用到了这些方法，按 `Enter` 键，`VSCode` 就会自动补全。
+### Object
 
-![xm-snippets代码提示](https://gitee.com/xiangming25/picture/raw/master/2021-9-8/1631108842889-image.png)
-
-
-### react
-
-`react` 的代码片段包含`函数组件` 和 `class component` 两类。
-
-函数组件又分为了 `Javascript` 版本和 `TypeScript` 版本。使用方式如下所示：
-
-快捷名 | 描述
+shortcut | description
 --- | ---
-`func` | `react function component` both support `javascript` and `typescript`
-`reactComponent` | `react class component`
+`keys` | `Object.keys(obj)`
+`values` | `Object.values(obj)`
+`assign` | `Object.assign({}, obj)`
+`freeze` | `Object.freeze(obj)`
 
-#### func for javascript
+### Promise
+
+shortcut | description
+--- | ---
+`promise` | `new Promise((resolve, reject) => {})`
+`resolve` | `Promise.resolve()`
+`reject` | `Promise.reject()`
+`race` | `Promise.race()`
+`all` | `Promise.all([])`
+
+### JSON
+
+shortcut | description
+--- | ---
+`stringify` | `JSON.stringify()`
+`parse` | `JSON.parse()`
+
+### Others
+
+#### switch
+
+```
+switch (key) {
+  case value:
+    
+    break;
+
+  default:
+    break;
+}
+```
+
+#### for
+
+```
+for (let index = 0; index < array.length; index++) {
+  const element = array[index];
+  
+}
+```
+
+## React
+
+### func (component for javascript)
 
 ```
 import React, { useEffect, useState } from 'react';
@@ -104,9 +134,10 @@ const Index = () => {
 };
 
 export default Index;
+
 ```
 
-#### func for typescript
+### func (component for typescript)
 
 ```
 import React, { FC, useEffect, useState } from 'react';
@@ -132,9 +163,10 @@ const Index: FC<IProps> = (props) => {
 };
 
 export default Index;
+
 ```
 
-#### reactComponent
+### reactComponent (component for class)
 
 ```
 import React, { Component } from 'react';
@@ -172,7 +204,12 @@ export default class Index extends Component {
     );
   }
 }
+
 ```
+
+## 更新日志
+
+- 2021-09-10 添加 object snippets， Promise snippets JSON snippets，修改 array 快捷提示使用方式
 
 持续更新中~~~
 
