@@ -4,6 +4,7 @@ title: typescript catch 值类型报错解决方案
 categories: [TypeScript]
 description: typescript catch 值类型报错解决方案
 keywords: typescrpit catch value type error, 如何修改catch值类型, catch 值类型在 window和mac上显示不一致
+updateDate: 2021-09-13
 ---
 
 抓狂：`typescript` 不设置 `catch` 值类型，会报 `unknown` 错误，设置了又会报 `Catch 子句变量不能有类型批注` 错误。这个该怎么办？
