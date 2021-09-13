@@ -110,3 +110,5 @@ try {
   }
 }
 ```
+
+参考链接：[https://devblogs.microsoft.com/typescript/announcing-typescript-4-4/#use-unknown-catch-variables](https://devblogs.microsoft.com/typescript/announcing-typescript-4-4/#use-unknown-catch-variables)
