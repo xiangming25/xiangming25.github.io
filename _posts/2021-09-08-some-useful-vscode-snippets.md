@@ -42,7 +42,7 @@ shortcut | description
 
 ![log信息](https://gitee.com/xiangming25/picture/raw/master/2021-9-8/1631099293731-image.png)
 
-项目中输入 `log` 命令，然后选择带 `xm-log` 的那一行，然后按 `Enter` 键，就可以生成
+项目中输入 `log` 命令，然后选择带 `log` 的那一行，然后按 `Enter` 键，就可以生成
 ```
 console.log('log:value-------------: ', value);
 ```

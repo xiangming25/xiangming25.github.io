@@ -95,7 +95,18 @@ try {
 
 然后查找了一下我目前当前的 `typescript` 插件，确实有安装过`JavaScript and TypeScript Nightly`插件，尝试把它卸载后，重启 `vscode`，没有再报这个错误了。再安装回来，一阵 `loading` 后，又报上了上面提到的错误。基本可以确定，问题就是在这里。
 
-## 总结
+## 2021年9月13日更新
 
-- 写完全符合 `typescript` 规范的代码（上面的错误有报 `ts1196` 错误，那就是不应该给 `catch` 添加类型）
-- 公司开发过程中，大家的插件尽量保持一致，好用的一起用，不好用的，大家慎用，提高开发效率的同时，尽可能的减少这些不必要的排查问题时间
+通过上述方法移除了`JavaScript and TypeScript Nightly`插件后，在 `2021年9月`之前，没有更新 `Typescript` 版本，一直没有问题。后面拉了最新的代码后，`TS` 版本最新更新到了 `4.4` 版本后。对 `try catch` 中 `catch` 的默认值进行了修改，修改改了 `unknow`。如果我们不想修改 `catch(err)` 中 `err` 的类型值。可以设置 `TS` 的编译配置 `useUnknownInCatchVariables: false`。
+
+配置如下所示：
+
+```
+{
+  "compilerOptions": {
+    ...
+    "useUnknownInCatchVariables": false,
+    ...
+  }
+}
+```
