@@ -1,6 +1,6 @@
 ---
 layout: post
-title: TypeScript 报 Parsing error: "parserOptions.project" has been set for @typescript-eslint/parser错误
+title: TypeScript 报 Parsing error parserOptions.project has been set for @typescript-eslint/parser错误
 categories: [TypeScript]
 description: Parsing error: "parserOptions.project" has been set for @typescript-eslint/parser
 keywords: typescript parsing error, parserOptions.project
