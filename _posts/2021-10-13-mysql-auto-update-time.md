@@ -22,7 +22,7 @@ keywords: mysql auto update createTime
 
 当我修改用户信息时
 
-![修改用户信息](https://gitee.com/xiangming25/picture/raw/master/2021-10-13/1634121753578-image.png)
+![修改用户信息](https://gitee.com/xiangming25/picture/raw/master/2021-10-13/1634123604902-image.png)
 
 当中只修改了头像、用户名、电话号码、角色。在服务端会再自动给它添加上 `updateTime` 字段。在控制台中打印的 `sql` 执行语句如下所示：
 
