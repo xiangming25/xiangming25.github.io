@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 如何配置 git bash 作为 vscode 默认控制台
+title: vscode 配置 git bash 为默认控制台
 categories: [VScode]
 description: 配置 git bash 作为 vscode 默认控制台，并且使一些写在 ~/.bash_profile 中的自定义命令生效
-keywords: vscode git bash, vscode bash_profile
+keywords: vscode, git bash, vscode bash_profile, use git bash in vscode
 ---
 
 ## 打开 settings.json
