@@ -1,6 +1,6 @@
 <h3 class="pc-only">友情链接</h3>
 <section class="pc-only">
-    {% for name in site.data.friendlyLinks %}
-        <a href="{{ name.url }}" target="_blank" class="card text-center">{{ name }}</a>
+    {% for site in site.data.friendlyLinks %}
+        <a href="{{ site.url }}" target="_blank" class="card text-center">{{ site.name }}</a>
     {% endfor %}
 </section>
