@@ -4,6 +4,7 @@ title: 一些你可能不知道的 git 命令
 categories: [common]
 description: 一些非常有用的git命令
 keywords: git,git cherry-pick,合并多个commit,合并多个间隔的commit
+excerpt: 一些非常有用的git命令
 ---
 
 ## git add
