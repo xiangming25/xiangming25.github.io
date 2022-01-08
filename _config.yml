@@ -39,11 +39,6 @@ navs:
 #   -
 #     href: /archives/
 #     label: 归档
-
-  -
-    href: /open-source/
-    label: 项目
-
   -
     href: /about/
     label: 关于

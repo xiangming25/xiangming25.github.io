@@ -3,7 +3,71 @@
 @import url('/assets/vendor/octicons/octicons/octicons.css');
 @import url('./globals/prism.css');
 @import url('./components/collection.css');
-@import url('./sections/repo-list.css');
 @import url('./globals/common.css');
 @import url('./globals/responsive.css');
 @import url('./posts/index.css');
+
+/* 首页列表 */
+.repo-list-name,.repo-list-name .prefix,.repo-list-name .slash {
+	font-weight: 400
+}
+
+.repo-list {
+	position: relative;
+	padding-left: 0
+}
+
+.repo-list-item {
+	position: relative;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	list-style: none;
+	border-bottom: 1px solid #eee
+}
+
+.repo-list-name {
+	margin: 0 0 8px;
+	font-size: 20px;
+	line-height: 1.2
+}
+
+.repo-list-name:hover {
+	text-decoration: none;
+	color: #4169E1
+}
+
+.repo-list-description {
+	max-width: 550px;
+	margin-top: 8px;
+	margin-bottom: 0;
+	font-size: 14px;
+	color: #666
+}
+
+.repo-list-meta {
+	display: block;
+	margin-top: 8px;
+	margin-bottom: 0;
+	font-size: 13px;
+	color: #999
+}
+
+.repo-list-meta .avatar {
+	margin-top: -2px
+}
+
+.repo-list-meta a:hover {
+	text-decoration: none
+}
+
+.repo-list-meta .meta-info {
+	margin-right: 15px
+}
+
+.repo-list-meta .meta-info a {
+	color: #999
+}
+
+.repo-list-meta .meta-info a:hover,.repo-list-meta .meta-info a:hover {
+	text-decoration: underline
+}
