@@ -45,7 +45,8 @@
 }
 
 .home .site-header {
-    border-bottom: none
+  border-bottom: none;
+  z-index: 999
 }
 
 .home .site-header h1 a {
